@@ -1,12 +1,9 @@
-import { Home, AboutMe, MyWork} from './components'
+import Home from "./components/Home"
 
 function App() {
-
   return (
     <>
-    {/* <Home/> */}
-    <AboutMe/>
-    <MyWork/>
+      <Home />
     </>
   )
 }
