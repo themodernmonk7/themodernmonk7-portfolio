@@ -1,10 +1,11 @@
 import React from "react"
-import { MyProjects } from "../components"
+import { GithubProjects, TopFiveProjects } from "../components"
 
 const WorksPage = () => {
   return (
     <>
-      <MyProjects />
+      <TopFiveProjects />
+      <GithubProjects />
     </>
   )
 }

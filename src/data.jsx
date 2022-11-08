@@ -32,11 +32,11 @@ export const Person = {
   username: "themodernmonk7",
   tags: [
     " 🔓 Open Source",
+    " #️⃣ Creator",
     " 💼 Looking for new opportunities",
     " 👥 Open to collaborate",
     "👨‍💻 Full Stack Web Developer",
     "  React Developer",
-    " #️⃣ Creator",
   ],
   image: [PersonColorImage, PersonBWImage],
   tagline_text: "creative designer & a developer.",
@@ -236,6 +236,28 @@ export const projects = [
   },
   {
     id: 3,
+    project_name_id: "hackernews",
+    name: "Hacker News",
+    category: "React App",
+
+    description:
+      "This is the clone project of the free stocks photos and videos website, Pexels.",
+    link: "https://20-hacker-news.netlify.app/",
+    image: Image1,
+  },
+  {
+    id: 4,
+    project_name_id: "hackernews",
+    name: "Hacker News",
+    category: "React App",
+
+    description:
+      "This is the clone project of the free stocks photos and videos website, Pexels.",
+    link: "https://20-hacker-news.netlify.app/",
+    image: Image1,
+  },
+  {
+    id: 5,
     project_name_id: "hackernews",
     name: "Hacker News",
     category: "React App",

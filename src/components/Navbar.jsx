@@ -13,7 +13,7 @@ const Navbar = () => {
     setIsSidebarOpen(false)
   }
   return (
-    <nav className=" container mx-auto  z-10 fixed inset-x-0 top-0 text-gray-600 py-4 px-20 ">
+    <nav className=" container mx-auto  z-10 fixed inset-x-0 top-0 text-gray-600 py-4 md:px-20 px-5 ">
       <div className="flex ">
         <Link onClick={closeSidebar} to="/">
           <h4 className=" font-black text-3xl text-black tracking-widest md:hidden ">

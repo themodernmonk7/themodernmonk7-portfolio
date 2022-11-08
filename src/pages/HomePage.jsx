@@ -1,4 +1,3 @@
-import React from "react"
 import { Home, MyProjects } from "../components"
 
 const HomePage = () => {

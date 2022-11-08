@@ -1,7 +1,11 @@
 import React from "react"
-
+import { ContactForm } from "../components"
 const ContactPage = () => {
-  return <div>ContactPage</div>
+  return (
+    <>
+      <ContactForm />
+    </>
+  )
 }
 
 export default ContactPage
