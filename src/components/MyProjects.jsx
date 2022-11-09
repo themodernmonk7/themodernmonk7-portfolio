@@ -6,13 +6,13 @@ import TopThreeProjects from "./TopThreeProjects"
 const MyProjects = () => {
   return (
     <>
-      <section className="container mx-auto md:px-20 mt32 ">
+      <section className="container mx-auto md:px-20 ">
         <div className="  space-y-8 px-5 md:px-0 mb-20 md:mb-40 ">
           {/* py-10 mb-12 md:mb-40 px-5 md:px-20 lg:px-0 */}
           <h4 className="text-3xl md:text-5xl font-semibold">
             Crafted with love.
           </h4>
-          <p className="text-gray-700 font-medium md:text-lg">
+          <p className="text-gray-700 font-medium md:text-lg dark:text-gray-400">
             These are a selection of my recent works.
           </p>
         </div>

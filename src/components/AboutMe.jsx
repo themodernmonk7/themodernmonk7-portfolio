@@ -17,7 +17,7 @@ const AboutMe = () => {
                 return (
                   <div
                     key={index}
-                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50  "
+                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50 dark:bg-slate-700 dark:border-black dark:hover:bg-slate-600 dark:text-white/50  "
                   >
                     {" "}
                     {tag}{" "}
@@ -28,7 +28,7 @@ const AboutMe = () => {
           </div>
           {/* flex  justify-center items-center */}
           {/* Image */}
-          <div className=" wfull flex  justify-center xl:justify-start items-center  relative  ">
+          <div className=" flex  justify-center xl:justify-start items-center  relative  ">
             <div className=" relative ">
               <img
                 src={image[0]}
@@ -56,20 +56,20 @@ const AboutMe = () => {
               </div>
               <div className="md:w-2/3 space-y-10">
                 <h4 className="text-2xl font-medium capitalize ">{title}</h4>
-                <p className="flex flex-col space-y-8 md:space-y-12 leading-10 text-xl ">
+                <p className="flex flex-col space-y-8 md:space-y-12 leading-10 md:text-lg md:leading-10 dark:text-gray-400  ">
                   {description}
                 </p>
               </div>
             </div>
           )
         })}
-        <section className="flex flex-col md:flex-row justify-end">
+        <div className="flex flex-col md:flex-row justify-end">
           <div className="grid  md:grid-cols-2 gap-10 md:w-2/3 ">
             {stacks.map((stack, index) => {
               const { stack_title, stack_items } = stack
               return (
                 <div key={index}>
-                  <h4 className="text-lg font-medium text-gray-700 underline capitalize ">
+                  <h4 className="text-lg font-medium text-gray-700 dark:text-gray-400 underline capitalize ">
                     {stack_title}
                   </h4>
                   <div className=" space-y-4 mt-3 ">
@@ -84,7 +84,7 @@ const AboutMe = () => {
                             alt={item.title}
                             className="w-5 h-5 rounded-md "
                           />
-                          <p className=" capitalize text-gray-600 text-sm ">
+                          <p className=" capitalize text-gray-600 dark:text-gray-500 text-sm ">
                             {item.title}
                           </p>
                         </div>
@@ -95,7 +95,7 @@ const AboutMe = () => {
               )
             })}
           </div>
-        </section>
+        </div>
 
         {/* Social */}
       </section>

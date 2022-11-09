@@ -69,6 +69,11 @@ export const Person = {
     },
     {
       id: 4,
+      sidebar_title: "experience",
+      title: "My Experience",
+    },
+    {
+      id: 5,
       sidebar_title: "tech stacks",
       title: "My tech stacks",
     },
@@ -310,10 +315,43 @@ export const socialLinks = [
     url: "https://github.com/themodernmonk7",
     icon: <AiOutlineGithub className="w-6 h-6" />,
   },
+  // {
+  //   id: 4,
+  //   text: "Showwcase",
+  //   url: "https://www.showwcase.com/themodernmonk7",
+  //   icon: "https://assets.showwcase.com/landing-page/svg/footer-logo.svg",
+  // },
+]
+
+export const gitHubProjects = [
+  {
+    id: 1,
+    projectName: "Quizology quiz app",
+    githubLink: "https://github.com/themodernmonk7/quizology",
+    liveLink: "",
+  },
+  {
+    id: 2,
+    projectName: "redux-toolkit-cart",
+    githubLink: "https://github.com/themodernmonk7/redux-toolkit-cart",
+    liveLink: "https://01-redux-toolkit-cart.netlify.app/",
+  },
+  {
+    id: 3,
+    projectName: "Jobs api",
+    githubLink: "https://github.com/themodernmonk7/Jobs-API",
+    liveLink: "",
+  },
   {
     id: 4,
-    text: "Showwcase",
-    url: "https://www.showwcase.com/themodernmonk7",
-    icon: "https://assets.showwcase.com/landing-page/svg/footer-logo.svg",
+    projectName: "E-commerce API",
+    githubLink: "https://github.com/themodernmonk7/E-commerce-API",
+    liveLink: "",
+  },
+  {
+    id: 5,
+    projectName: "Quizology quiz app",
+    githubLink: "https://github.com/themodernmonk7/quizology",
+    liveLink: "",
   },
 ]

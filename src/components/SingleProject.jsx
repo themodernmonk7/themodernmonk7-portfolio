@@ -46,7 +46,7 @@ const SingleProject = () => {
           <h4 className=" text-2xl md:text-5xl font-semibold ">
             About the project.
           </h4>
-          <p className="text-gray-600 md:text-xl md:w-3/4 leading-[30px] ">
+          <p className="text-gray-600 dark:text-gray-400 md:text-xl md:w-3/4 leading-[30px] ">
             Social Gen is a simple social media site inspired by
             facebook/instagram. It is a re-branding of an old project called
             'Foodie'. It has the basic functionality of a social media site such
@@ -86,7 +86,7 @@ const SingleProject = () => {
             href="#"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
-            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
+            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
               launch app
               <span className="absolute bottom-2 ml-2">
                 <svg
@@ -111,7 +111,7 @@ const SingleProject = () => {
             href="#"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
-            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
+            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
               source code
               <span className="absolute bottom-2 ml-2">
                 <svg

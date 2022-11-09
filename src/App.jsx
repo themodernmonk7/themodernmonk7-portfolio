@@ -9,6 +9,7 @@ import {
   SingleProjectPage,
 } from "./pages"
 import { Navbar, SayHello, Footer } from "./components"
+import SharedLayout from "./pages/SharedLayout"
 
 function App() {
   return (
