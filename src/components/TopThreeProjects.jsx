@@ -9,15 +9,18 @@ const TopThreeProjects = () => {
         return (
           <article
             key={id}
-            className=" mb-10 flex flex-col justify-between md:gap-20 md:mb-40 md:flex-row md:odd:flex-row-reverse "
+            className=" mb-10 flex flex-col justify-between md:gap-20 md:mb-40 md:flex-row md:odd:flex-row-reverse group "
           >
             {/* hover:grayscale-0 */}
             {/* image */}
-            <div className=" relative flex h-80 w-full  bg-red-100 md:h-[460px] md:w-[300px]  lg:w-2/5  ">
+            <div
+              id="imageContainer"
+              className=" relative flex h-80 w-full  bg-red-100 md:h-[460px] md:w-[300px]  lg:w-2/5   "
+            >
               <img
                 src={image}
                 alt=""
-                className=" h-full w-full object-cover  "
+                className=" h-full w-full object-cover md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-[1.02] transition duration-300 ease-in-out  "
               />
               {/* transition duration-300 ease-in-out hover:scale-105 */}
 
@@ -33,7 +36,8 @@ const TopThreeProjects = () => {
             <div className=" mt-6 flex flex-col justify-between md:mt-0 px-5 md:w-1/2 md:px-0 ">
               <div className=" md:space-y-10 ">
                 <h2
-                  className=" text-2xl lowercase tracking-wider md:text-3xl md:font-black md:capitalize  md:text-white md:drop-shadow-lg lg:text-6xl "
+                  id="textContainer"
+                  className=" text-2xl lowercase tracking-wider md:text-4xl md:font-black md:capitalize  md:text-white  lg:text-5xl group-hover:text-black   transition duration-300 delay-100 ease-in-out "
                   style={{ WebkitTextStroke: "1px black " }}
                 >
                   {/* hover:text-black */}
