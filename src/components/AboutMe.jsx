@@ -35,7 +35,10 @@ const AboutMe = () => {
                 alt=""
                 className=" grayscale w-60 h-60 md:w-72 md:h-72 object-cover rounded-full  "
               />
-              <span className="absolute right-14 bottom-0 bg-yellow-200 border-2 w-8 h-8 text-center flex justify-center items-center rounded-full  cursor-default ">
+              <span
+                title="Open to work"
+                className="absolute right-14 bottom-0 bg-yellow-200 border-2 w-8 h-8 text-center flex justify-center items-center rounded-full  cursor-default "
+              >
                 {" "}
                 🔍{" "}
               </span>
