@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { links } from "../data"
-import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi"
+import { links, Person } from "../data"
+import { HiOutlineMenuAlt3 } from "react-icons/hi"
 import { useState } from "react"
 import Sidebar from "./Sidebar"
-import { useEffect } from "react"
+
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   // const [theme, setTheme] = useState("light")
@@ -29,13 +29,18 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 md:px-20 px-5 ">
+      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 xl:mt-4 px-5 xl:px-0">
         {/* Desktop Navbar */}
         <div className="flex justify-between items-center ">
           <Link to="/">
-            <h4 className=" font-black text-3xl md:text-4xl text-black dark:text-white tracking-widest ">
+            {/* <h4 className=" font-black text-3xl md:text-4xl text-black dark:text-white tracking-widest ">
               TMM7
-            </h4>
+            </h4> */}
+            <img
+              src={Person.image[2]}
+              alt={Person.name}
+              className="w-10 h-10 md:w-12 md:h-12 object-cover rounded-full "
+            />
           </Link>
           <ul className="md:flex space-x-10 hidden ">
             {links.slice(1, 4).map((link) => {
@@ -55,7 +60,7 @@ const Navbar = () => {
             className="block   ml-auto md:hidden z-50  "
           >
             {" "}
-            <HiOutlineMenuAlt3 className="w-8 h-8 text-black dark:text-white " />
+            <HiOutlineMenuAlt3 className="w-8 h-8 text-black dark:text-white  " />
           </button>
           {/* <button onClick={toggleDarkMode} className="">
             dark mode

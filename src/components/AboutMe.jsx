@@ -5,11 +5,11 @@ const AboutMe = () => {
   const { image, about_myself, long_bio, stacks, tags } = Person
   return (
     <>
-      <section className="container mx-auto px-5 md:px-20 xl:px-20 my-40 ">
+      <section className="container mx-auto px-5 md:px-20 xl:px-44 my-40 ">
         <div className="flex flex-col-reverse xl:flex-row-reverse justify-between md:gap-10 xl:gap-0  ">
           {/* Text content */}
           <div className=" mt-10 md:mt-0 xl:w-2/3 ">
-            <h4 className="md:text-4xl text-xl leading-[40px] md:leading-[70px] ">
+            <h4 className="md:text-4xl text-xl leading-[40px] md:leading-[60px] ">
               {long_bio}
             </h4>
             <div className=" mt-5 flex flex-wrap gap-5 ">
@@ -17,7 +17,7 @@ const AboutMe = () => {
                 return (
                   <div
                     key={index}
-                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50 dark:bg-slate-700 dark:border-black dark:hover:bg-slate-600 dark:text-white/50  "
+                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50 dark:bg-black dark:border-black dark:hover:bg-slate-600 dark:text-white/50  "
                   >
                     {" "}
                     {tag}{" "}
@@ -45,7 +45,6 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-
         {about_myself.map((item) => {
           const { id, sidebar_title, title, description } = item
           return (
@@ -87,7 +86,7 @@ const AboutMe = () => {
                             alt={item.title}
                             className="w-5 h-5 rounded-md "
                           />
-                          <p className=" capitalize text-gray-600 dark:text-gray-500 text-sm ">
+                          <p className=" capitalize text-gray-600 dark:text-gray-300 text-sm ">
                             {item.title}
                           </p>
                         </div>
@@ -99,7 +98,6 @@ const AboutMe = () => {
             })}
           </div>
         </div>
-
         {/* Social */}
       </section>
     </>

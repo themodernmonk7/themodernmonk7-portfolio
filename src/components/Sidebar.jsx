@@ -27,8 +27,8 @@ const Sidebar = ({ closeSidebar }) => {
           </ul>
         </div>
       )} */}
-      <aside className="bg-black w-full min-h-screen z-50 fixed top-0 bottom-0 md:hidden transform translate-x-0   ">
-        <div className="flex px-5 py-4 ">
+      <aside className="bg-black w-full min-h-screen z-50 fixed top-0 bottom-0 md:hidden    ">
+        <div className="flex px-5 py-4  ">
           <Link to="/" onClick={closeSidebar}>
             <h4 className=" font-black text-3xl text-white tracking-widest md:hidden ">
               TMM7
@@ -36,7 +36,7 @@ const Sidebar = ({ closeSidebar }) => {
           </Link>
           <button
             onClick={closeSidebar}
-            className="block   ml-auto md:hidden z-50  "
+            className="block   ml-auto md:hidden z-50    "
           >
             {" "}
             <HiOutlineX className="w-8 h-8 text-white  " />
@@ -49,7 +49,7 @@ const Sidebar = ({ closeSidebar }) => {
               <li
                 onClick={closeSidebar}
                 key={id}
-                className=" tracking-widest text-white/40 hover:line-through hover:text-white "
+                className=" tracking-widest text-white/40 hover:line-through hover:text-white transition-all duration-300 ease-in-out "
               >
                 <Link to={url}>{text}</Link>
               </li>

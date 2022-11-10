@@ -5,10 +5,10 @@ import VodutvImage2 from "../assets/Vodutv.png"
 import { projects } from "../data"
 
 const SingleProject = () => {
-  const { id } = useParams()
-  const { name, image, description } = projects[id]
+  const { projectID } = useParams()
+  const item = projects.find((project) => project.project_name_id === projectID)
+  const { name, image } = item
 
-  // console.log(projects)
   const backgroundImageStyle = {
     backgroundImage: `URL(${image}) `,
     backgroundSize: "cover",
@@ -39,7 +39,7 @@ const SingleProject = () => {
         ></a>
       </div>
 
-      <section className="container mx-auto md:px-20 px-5 md:my-28 mt-10  ">
+      <section className="container mx-auto md:px-20 px-5 md:my-28 mt-10 xl:px-44  ">
         {/* About Project */}
 
         <div className=" space-y-16 ">
@@ -137,7 +137,7 @@ const SingleProject = () => {
       {/* image */}
       <section className="  bg-slate-800 my-20  md:py-20 ">
         {/* image 1 */}
-        <div className="container mx-auto p-[10%] md:p-0  md:px-20 flex justify-center items-center ">
+        <div className="container mx-auto p-[10%] md:p-0  md:px-20 xl:px-44 flex justify-center items-center ">
           <img
             src={VodutvImage2}
             alt=""

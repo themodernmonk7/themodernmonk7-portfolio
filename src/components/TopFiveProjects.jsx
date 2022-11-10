@@ -4,9 +4,11 @@ import { projects } from "../data"
 const TopFiveProjects = () => {
   return (
     <>
-      <section className="container mx-auto mt-40  md:px-20">
+      <section className="container mx-auto mt-40  md:px-20 xl:px-44">
         {/* xl:px-44 lg:px-20 */}
-        <h4 className="md:mb-40 mb-28 px-5 text-3xl md:text-5xl font-semibold md:px-0 ">My Works</h4>
+        <h4 className="md:mb-40 mb-28 px-5 text-3xl md:text-5xl font-semibold md:px-0 ">
+          My Works
+        </h4>
         {projects.map((item) => {
           const { id, name, category, description, image, project_name_id } =
             item
@@ -52,7 +54,7 @@ const TopFiveProjects = () => {
                 </div>
 
                 <Link
-                  to={`/projects/${id - 1}`}
+                  to={`/projects/${project_name_id}`}
                   className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[190px] transform cursor-pointer  items-center space-x-2 py-1 text-lg font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[200px] md:font-bold"
                 >
                   <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[3px] md:before:h-14 md:before:w-14   ">

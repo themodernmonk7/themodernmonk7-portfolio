@@ -2,6 +2,7 @@ import React from "react"
 import Image1 from "./assets/Project1.png"
 import PersonColorImage from "./assets/Saurav.jpg"
 import PersonBWImage from "./assets/SauravBW.jpg"
+import SauravColor from "./assets/SauravColor.jpg"
 import {
   CSS3,
   ExpressJs,
@@ -24,6 +25,7 @@ import {
   AiOutlineTwitter,
   AiOutlineGithub,
   AiFillLinkedin,
+  AiOutlineMail,
 } from "react-icons/ai"
 
 // About Person
@@ -38,7 +40,7 @@ export const Person = {
     "👨‍💻 Full Stack Web Developer",
     "  React Developer",
   ],
-  image: [PersonColorImage, PersonBWImage],
+  image: [PersonColorImage, PersonBWImage, SauravColor],
   tagline_text: "creative designer & a developer.",
   short_bio: `Hi I'm SAurav, a passionate Front-end Developer & UI/UX Designer based in the India.`,
   long_bio:
@@ -220,7 +222,7 @@ export const Person = {
 export const projects = [
   {
     id: 1,
-    project_name_id: "Landypix",
+    project_name_id: "landypix",
     name: "Landypix photo app",
     category: "React App",
     description:
@@ -315,12 +317,12 @@ export const socialLinks = [
     url: "https://github.com/themodernmonk7",
     icon: <AiOutlineGithub className="w-6 h-6" />,
   },
-  // {
-  //   id: 4,
-  //   text: "Showwcase",
-  //   url: "https://www.showwcase.com/themodernmonk7",
-  //   icon: "https://assets.showwcase.com/landing-page/svg/footer-logo.svg",
-  // },
+  {
+    id: 4,
+    text: "Email Address",
+    url: "mailto:kumaravishek2015@gmail.com",
+    icon: <AiOutlineMail className="w-6 h-6" />,
+  },
 ]
 
 export const gitHubProjects = [
