@@ -9,9 +9,10 @@ import {
   SingleProjectPage,
 } from "./pages"
 import { Navbar, SayHello, Footer } from "./components"
-import SharedLayout from "./pages/SharedLayout"
+import { useState } from "react"
 
 function App() {
+  const [dartToggle, setDarkToggle] = useState(false)
   return (
     <BrowserRouter>
       <Navbar />

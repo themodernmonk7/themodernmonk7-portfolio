@@ -39,12 +39,12 @@ const TopFiveProjects = () => {
               <div className=" mt-6 flex flex-col justify-between md:mt-0 px-5 md:w-1/2 md:px-0  ">
                 <div className=" md:space-y-10 ">
                   <h2
-                    className=" text-2xl lowercase tracking-wider md:text-4xl md:font-black   md:text-white lg:text-5xl group-hover:text-black   transition duration-300 delay-100 ease-in-out dark:text-white dark:group-hover:text-white "
-                    style={{ WebkitTextStroke: "1px black " }}
+                    className=" text-2xl lowercase font-bold tracking-wider md:text-4xl md:font-black  md:text-white  lg:text-5xl group-hover:text-black md:dark:text-black dark:group-hover:text-white  transition duration-300 delay-100 ease-in-out md:titleStrokeLightTheme md:dark:titleStrokeDarkTheme hover:titleStrokeNone"
+                    // style={{ WebkitTextStroke: "1px black " }}
                   >
                     {name}
                   </h2>
-                  <span className="inline-block pt-2 text-sm uppercase text-gray-400 md:pt-0 md:text-base ">
+                  <span className="inline-block pt-2 text-sm uppercase text-gray-400 md:pt-0 md:text-base dark:text-gray-300 ">
                     {category}
                   </span>
                   <p className="mt-5 hidden md:mt-0 md:grid md:text-lg dark:text-gray-400 ">
@@ -57,7 +57,7 @@ const TopFiveProjects = () => {
                   to={`/projects/${project_name_id}`}
                   className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[190px] transform cursor-pointer  items-center space-x-2 py-1 text-lg font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[200px] md:font-bold"
                 >
-                  <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[3px] md:before:h-14 md:before:w-14   ">
+                  <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[3px] md:before:h-14 md:before:w-14   ">
                     view project
                     <span className="absolute bottom-[10px] ml-2">
                       <svg

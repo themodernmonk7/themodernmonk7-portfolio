@@ -6,7 +6,7 @@ const GithubProjects = () => {
     <section className=" container mx-auto xl:px-20 md:px-20 px-5  mb-28 space-y-12 ">
       <div className="space-y-12 lg:w-2/3 ">
         <h4 className="text-2xl md:text-4xl font-semibold">GitHub Projects.</h4>
-        <p className="text-gray-600 text-base md:text-xl  ">
+        <p className="text-gray-600 text-base md:text-xl dark:text-gray-300  ">
           Here are some of my projects that I created during my spare time. I
           constantly keep on improving my skills by making these fun projects.
           These projects are available on my github repository

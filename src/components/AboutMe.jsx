@@ -17,7 +17,7 @@ const AboutMe = () => {
                 return (
                   <div
                     key={index}
-                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50 dark:bg-black dark:border-black dark:hover:bg-slate-600 dark:text-white/50  "
+                    className=" bg-gray-200/60 shadow-sm px-[6px] py-2 cursor-default border border-[#f1f1f1] rounded-md hover:bg-gray-50 dark:bg-circle dark:border-black dark:hover:bg-black dark:text-white/50  "
                   >
                     {" "}
                     {tag}{" "}

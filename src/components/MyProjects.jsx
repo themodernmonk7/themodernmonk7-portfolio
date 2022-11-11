@@ -12,7 +12,7 @@ const MyProjects = () => {
           <h4 className="text-3xl md:text-5xl font-semibold">
             Crafted with love.
           </h4>
-          <p className="text-gray-700 font-medium md:text-lg dark:text-gray-400">
+          <p className="text-gray-700 font-medium md:text-lg dark:text-gray-300">
             These are a selection of my recent works.
           </p>
         </div>

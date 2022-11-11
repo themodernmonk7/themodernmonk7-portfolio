@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "cslass",
+  darkMode: "clsass",
   theme: {
     screens: {
       sm: "480px",
@@ -16,6 +16,10 @@ module.exports = {
       },
       colors: {
         circle: "#303030",
+        circle_for_primary: "rgb(236 72 153 / 0.8)",
+        circle_for_secondary: "",
+        cross_bg_primary: "rgb(236 72 153 / 0.8)",
+        cross_bg_secondary: "",
       },
       keyframes: {
         float: {

@@ -17,7 +17,7 @@ const SayHello = () => {
             to="/contact"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[160px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
-            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[6px] md:before:h-14 md:before:w-14   ">
+            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-circle dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[6px] md:before:h-14 md:before:w-14   ">
               SAY HELLO
               <span className="absolute bottom-[10px] ml-2">
                 <svg
