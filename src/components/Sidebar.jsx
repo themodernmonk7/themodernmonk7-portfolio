@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { links, Person } from "../data"
 import { HiOutlineX } from "react-icons/hi"
-import { useState } from "react"
 const Sidebar = ({ closeSidebar }) => {
   return (
     <>

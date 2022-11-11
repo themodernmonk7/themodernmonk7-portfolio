@@ -3,7 +3,7 @@ import { IoMdSend } from "react-icons/io"
 const ContactForm = () => {
   return (
     <>
-      <section className="container mx-auto my-40 px-5 md:px-20 xl:px-44 ">
+      <section className="container mx-auto my-40 px-5 md:px-20 ">
         <form className=" md:space-y-20 space-y-12 ">
           <div className=" space-y-12 xl:w-2/3 ">
             <h4 className="md:text-6xl text-4xl font-semibold capitalize ">

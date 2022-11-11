@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <section className=" container mx-auto flex justify-between items-center h-screen   relative xl:my10 md:px-20 xl:px-44 mt-20 ">
+      <section className=" container mx-auto flex justify-between items-center h-screen   relative md:px-20 mt-20 ">
         <header className="flex flex-col-reverse md:flex-row justify-evenly md:justify-between h-screen md:h-min  ">
           {/* Left text  */}
           <div className=" flex flex-col justify-start w-full md:w-3/5 xl:w-1/2 px-5 md:px-0  ">
@@ -28,7 +28,7 @@ const Home = () => {
             <div className="flex flex-col items-start space-y-10  ">
               <Link
                 to="/works"
-                className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[210px] transform cursor-pointer  items-center space-x-2 py-1 text-lg font-semibold transition-all duration-500 hover:translate-x-4 xl:mt-32 md:w-[210px] md:font-bold"
+                className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[200px] transform cursor-pointer  items-center space-x-2 py-1 text-lg font-semibold transition-all duration-500 hover:translate-x-4 xl:mt-32 md:w-[210px] md:font-bold"
               >
                 <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[6px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-top-[3px] md:before:h-14 md:before:w-14   ">
                   view all works

@@ -5,7 +5,7 @@ const AboutMe = () => {
   const { image, about_myself, long_bio, stacks, tags } = Person
   return (
     <>
-      <section className="container mx-auto px-5 md:px-20 xl:px-44 my-40 ">
+      <section className="container mx-auto px-5 md:px-20  my-40 ">
         <div className="flex flex-col-reverse xl:flex-row-reverse justify-between md:gap-10 xl:gap-0  ">
           {/* Text content */}
           <div className=" mt-10 md:mt-0 xl:w-2/3 ">
