@@ -16,14 +16,19 @@ const GithubProjects = () => {
         const { id, projectName, githubLink, liveLink } = item
         return (
           <div key={id} className=" space-y-12 lg:w-2/3 ">
-            <div className="md:space-x-8 space-x-2 ">
+            <div className="md:space-x-4 space-x-2 ">
               <span className="text-gray-400 text-xs "> / 0{id}</span>
-              <a href={githubLink} className=" md:pl-4 font-mono ">
-                src
+              <a
+                href={githubLink}
+                rel="noreferrer"
+                target="_blank"
+                className=" md:pl-4 font-mono text-blue-500 "
+              >
+                src code
               </a>
               <a
                 href={liveLink}
-                className="md:text-xl font-medium underline hover:no-underline lowercase "
+                className="md:text-xl font-medium underline hover:no-underline lowercase transform hover:translate-x-6 "
               >
                 {projectName}
               </a>

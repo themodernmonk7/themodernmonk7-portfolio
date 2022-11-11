@@ -4,7 +4,7 @@ import { projects } from "../data"
 const TopFiveProjects = () => {
   return (
     <>
-      <section className="container mx-auto mt-40  md:px-20 xl:px-44">
+      <section className="container mx-auto mt-40  md:px-20">
         {/* xl:px-44 lg:px-20 */}
         <h4 className="md:mb-40 mb-28 px-5 text-3xl md:text-5xl font-semibold md:px-0 ">
           My Works
