@@ -1,6 +1,5 @@
 import React from "react"
 import { useParams } from "react-router-dom"
-import VodutvImage from "../assets/Project1.png"
 import VodutvImage2 from "../assets/Vodutv.png"
 import { projects } from "../data"
 
@@ -27,8 +26,6 @@ const SingleProject = () => {
             className="  text-2xl md:text-3xl xl:text-5xl md:font-black text-white tracking-wider "
             style={{ WebkitTextStroke: "1px white" }}
           >
-            {/* "linear-gradient(to bottom,transparent 0,rgba(0,0,0,.2) 10%,rgba(0,0,0,.7) 80%)" */}
-            {/* landypix photo app */}
             {name}
           </h2>
           <span className="uppercase inline-block text-white ">React app</span>
@@ -86,7 +83,7 @@ const SingleProject = () => {
             href="#"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
-            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
+            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
               launch app
               <span className="absolute bottom-2 ml-2">
                 <svg
@@ -111,7 +108,7 @@ const SingleProject = () => {
             href="#"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
-            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
+            <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
               source code
               <span className="absolute bottom-2 ml-2">
                 <svg
