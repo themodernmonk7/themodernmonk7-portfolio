@@ -67,7 +67,7 @@ const Home = () => {
               {/* <div className="w-56 h-56 md:w-60 md:h-60 rounded-full  bg-blue-700 drop-shadow-xl dark:bg-white absolute -top-6 md:-top-4 blur3xl -z-10 animatepulse  "></div> */}
 
               {/* small size cross for mobile cross */}
-              <span className="absolute -top-8 xl:hidden -z-10 lg:top-0 lg:scale-125  ">
+              <span className="absolute -top-10 md:-top-8 md:scale-110 xl:hidden -z-10 lg:top-0 lg:scale-125  ">
                 <svg
                   width="320"
                   height="260"
