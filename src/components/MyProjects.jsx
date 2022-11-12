@@ -25,7 +25,7 @@ const MyProjects = () => {
           <Link to="/works" className="inline-block py-2  ">
             <h2 className=" lowercase md:text-4xl text-2xl font-bold transform hover:translate-x-6 py-4 transition ease-in-out duration-500 ">
               View all projects{" "}
-              <span className=" absolute ml-2 top-[21px] ">
+              <span className=" absolute ml-2 md:top-[21px] ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
