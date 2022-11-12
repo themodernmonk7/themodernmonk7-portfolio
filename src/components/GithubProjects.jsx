@@ -20,7 +20,6 @@ const GithubProjects = () => {
               <span className="text-gray-400 text-xs "> / 0{id}</span>
               <a
                 href={githubLink}
-                rel="noreferrer"
                 target="_blank"
                 className=" md:pl-4 font-mono text-blue-500 "
               >
