@@ -25,7 +25,7 @@ const Home = () => {
               <h2 className=" md:text-lg text-gray-400 ">{Person.short_bio}</h2>
             </div>
 
-            <div className="flex flex-col items-start space-y-10  ">
+            <div className="flex flex-col items-start space-y-10 px-5 md:px-0  ">
               <Link
                 to="/works"
                 className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[200px] transform cursor-pointer  items-center space-x-2 py-1 text-lg font-semibold transition-all duration-500 hover:translate-x-4 xl:mt-32 md:w-[210px] md:font-bold"

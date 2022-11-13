@@ -6,7 +6,18 @@ import { projects } from "../data"
 const SingleProject = () => {
   const { projectID } = useParams()
   const item = projects.find((project) => project.project_name_id === projectID)
-  const { name, image } = item
+  const {
+    image,
+    name,
+    stack_category,
+    about,
+    platform,
+    category,
+    developer,
+    stack,
+    githubLink,
+    liveLink,
+  } = item
 
   const backgroundImageStyle = {
     backgroundImage: `URL(${image}) `,
@@ -28,15 +39,15 @@ const SingleProject = () => {
           >
             {name}
           </h2>
-          <span className="uppercase inline-block text-white ">React app</span>
+          <span className="uppercase inline-block text-white ">
+            {" "}
+            {stack_category}{" "}
+          </span>
         </div>
-        <a
-          href="#"
-          className="w-[1px] h-24 md:h-12 bg-white  absolute inset-x-0 bottom-0 animate-bounce xl:hidden  m-auto "
-        ></a>
+        <span className="w-[1px] h-24 md:h-12 bg-white  absolute inset-x-0 bottom-0 animate-bounce xl:hidden  m-auto "></span>
       </div>
 
-      <section className="container mx-auto md:px-20 px-5 md:my-28 mt-10 xl:px-44  ">
+      <section className="container mx-auto md:px-20 px-5 md:my-28 my-10 xl:px-44  ">
         {/* About Project */}
 
         <div className=" space-y-16 ">
@@ -44,43 +55,45 @@ const SingleProject = () => {
             About the project.
           </h4>
           <p className="text-gray-600 dark:text-gray-400 md:text-xl md:w-3/4 leading-[30px] ">
-            Social Gen is a simple social media site inspired by
-            facebook/instagram. It is a re-branding of an old project called
-            'Foodie'. It has the basic functionality of a social media site such
-            as authentication, private messaging, notification, profile
-            customization and many more.
+            {about}
           </p>
 
           <div className="flex md:flex-row flex-col gap-10">
             <div className=" space-y-2">
               <h4 className=" font-semibold text-gray-600">Platform</h4>
-              <p className=" text-gray-400 ">Web/Mobile</p>
+              <p className=" text-gray-400 "> {platform} </p>
             </div>
 
             <div className=" space-y-2">
               <h4 className="font-semibold text-gray-600">Category</h4>
-              <p className=" text-gray-400 ">Entertainment</p>
+              <p className=" text-gray-400 "> {category} </p>
             </div>
 
             <div className=" space-y-2">
               <h4 className="font-semibold text-gray-600">Developer</h4>
-              <p className=" text-gray-400 ">Kumar Avishek (Saurav)</p>
+              <p className=" text-gray-400 "> {developer} </p>
             </div>
           </div>
 
           <div className=" space-y-2">
             <h4 className="font-semibold text-gray-600">Technologies Used</h4>
             <div className=" space-x-8">
-              <span className=" text-gray-400">HTML</span>
-              <span className=" text-gray-400">CSS</span>
-              <span className=" text-gray-400">JAVASCRIPT</span>
+              {stack.map((item, index) => {
+                return (
+                  <span key={index} className=" text-gray-400">
+                    {" "}
+                    {item}{" "}
+                  </span>
+                )
+              })}
             </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 mt-10">
+        <div className="grid md:grid-cols-2 mt-10 px-5 md:px-0">
           <a
-            href="#"
+            href={liveLink}
+            target="_blank"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
             <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
@@ -105,7 +118,8 @@ const SingleProject = () => {
           </a>
 
           <a
-            href="#"
+            href={githubLink}
+            target="_blank"
             className="ease-[cubic-bezier(.77, 0, 0.175, 1)] relative mt-12  flex  w-[170px] transform cursor-pointer  items-center space-x-2 py-1 font-semibold transition-all duration-500 hover:translate-x-4 md:mt-32 md:w-[180px] md:font-bold"
           >
             <span className=" before:ease-[cubic-bezier(.77, 0, 0.175, 1)] py-2 before:absolute before:-left-5 before:bottom-[5px] before:-z-10 before:block before:h-10 before:w-10 before:rounded-full before:bg-gray-200 dark:before:bg-circle_for_primary before:transition-all before:duration-500 before:hover:w-full md:before:-left-6 md:before:-bottom-[3px] md:before:h-14 md:before:w-14   ">
@@ -132,14 +146,32 @@ const SingleProject = () => {
       </section>
 
       {/* image */}
-      <section className="  bg-slate-800 my-20  md:py-20 ">
-        {/* image 1 */}
+      {/* <section className=" bg-blue-200 my-20  md:py-20 flex flex-col gap-10 ">
+        <div className="container mx-auto p-[10%] md:p-0  md:px-20 xl:px-44 flex justify-center items-center bg-yellow-200 ">
+          <img
+            src={VodutvImage2}
+            alt=""
+            className=" w-full h-full object-cover "
+          />
+        </div>
         <div className="container mx-auto p-[10%] md:p-0  md:px-20 xl:px-44 flex justify-center items-center ">
           <img
             src={VodutvImage2}
             alt=""
             className=" w-full h-full object-cover "
           />
+        </div>
+      </section> */}
+
+      <section className=" bg-blue-200 flex flex-col ">
+        <div className="  bg-black ">
+          <div className=" container mx-auto p-[10%] md:p-0  md:px-20 xl:px-44 flex justify-center items-center  md:py-28 ">
+            <img
+              src={VodutvImage2}
+              alt=""
+              className=" w-full h-full object-cover "
+            />
+          </div>
         </div>
       </section>
     </>

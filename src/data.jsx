@@ -224,10 +224,20 @@ export const projects = [
     id: 1,
     project_name_id: "landypix",
     name: "Landypix photo app",
-    category: "React App",
+    stack_category: "React App",
     description:
       "This is the clone project of the free stocks photos and videos website, Pexels.",
-    link: "https://landypix.netlify.app/",
+
+    about: `Social Gen is a simple social media site inspired by facebook/instagram. It is a re-branding of an old project called 'Foodie'. It has the basic functionality of a social media site such as authentication, private messaging, notification, profile customization and many more.`,
+    platform: "Web/Mobile",
+    category: "Entertainment",
+    developer: "Kumar Avishek (Surav)",
+
+    stack: ["HTML", "ReactJS", "Tailwind CSS"],
+
+    githubLink: "https://github.com/themodernmonk7/landypix_stock_photos",
+    liveLink: "https://landypix.netlify.app/",
+
     image: Image1,
   },
   {

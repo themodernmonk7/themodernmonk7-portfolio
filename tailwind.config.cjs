@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "clsass",
+  darkMode: "sclass",
   theme: {
     screens: {
       sm: "480px",
@@ -15,6 +15,7 @@ module.exports = {
         arimo: "'Arimo', sans-serif;",
       },
       colors: {
+        main_background_color: "#171718",
         circle: "#303030",
         circle_for_primary: "rgb(236 72 153 / 0.8)",
         circle_for_secondary: "",
