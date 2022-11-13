@@ -23,16 +23,20 @@ const Sidebar = ({ closeSidebar }) => {
           </button>
         </div>
         <ul className=" lowercase text-3xl font-medium space-y-14 text-center flex flex-col justify-center items-center h-screen  ">
-          {links.slice(1, 4).map((link) => {
+          {links.map((link) => {
             const { id, text, url } = link
             return (
-              <li
+              <Link
                 onClick={closeSidebar}
                 key={id}
-                className=" tracking-widest text-white/40 hover:line-through hover:text-white transition-all duration-300 ease-in-out "
+                className=" tracking-widest text-white/40 hover:text-white transition-all duration-300 ease-in-out relative "
+                to={url}
               >
-                <Link to={url}>{text}</Link>
-              </li>
+                <span className=" absolute text-4xl left-0 right-0 scale-150 opacity-0 hover:opacity-30 font-bold ">
+                  0{id}
+                </span>
+                {text}
+              </Link>
             )
           })}
         </ul>
