@@ -7,20 +7,6 @@ import Sidebar from "./Sidebar"
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  // const [theme, setTheme] = useState("light")
-
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     document.documentElement.classList.add("dark")
-  //   } else {
-  //     document.documentElement.classList.add("dark")
-  //   }
-  // }, [theme])
-
-  // const toggleDarkMode = () => {
-  //   setTheme(theme === "dark" ? "light" : "dark")
-  // }
-
   const openSidebar = () => {
     setIsSidebarOpen(true)
   }
@@ -29,7 +15,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 xl:mt-4 px-5 xl:px-0">
+      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 xl:mt4 px-5 xl:px-0 border-b bg-white/90 ">
         {/* Desktop Navbar */}
         <div className="flex justify-between items-center ">
           <Link to="/">
