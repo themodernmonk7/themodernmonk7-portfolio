@@ -15,7 +15,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 xl:mt4 px-5 xl:px-0 border-b bg-white/90 ">
+      <nav className=" container mx-auto  z-30 fixed inset-x-0 top-0 text-gray-600 py-4 xl:mt4 px-5 xl:px-0 border-b bg-white/60 backdrop-blur-sm ">
         {/* Desktop Navbar */}
         <div className="flex justify-between items-center ">
           <Link to="/">
