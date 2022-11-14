@@ -32,7 +32,7 @@ const Sidebar = ({ closeSidebar }) => {
                 className=" tracking-widest text-white/40 hover:text-white transition-all duration-300 ease-in-out relative "
                 to={url}
               >
-                <span className=" absolute text-4xl left-0 right-0 scale-150 opacity-0 hover:opacity-30 font-bold ">
+                <span className=" absolute text-5xl top-0 -bottom-10 left-0 right-0 scale-150 opacity-0 hover:opacity-30 font-bold ">
                   0{id}
                 </span>
                 {text}
