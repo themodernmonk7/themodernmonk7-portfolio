@@ -50,9 +50,9 @@ export const Person = {
       id: 1,
       sidebar_title: "story",
       title: "A story of hardwork and perseverance.",
-      description: `Hi! I'm SAurav. I have a strong passion for design and technology. I specialize in Front End Development and UI/UX Design and my passion is all about building elegant and professional user interfaces and websites. I also do branding and identity design such as logo design, letterhead and business card, along with photo editing, image cropping and other graphic design services.
+      description: `Hi! I'm SAurav. My official name is Kumar Avishek and SAurav is my pen name. I have a strong passion for design and technology. I specialize in Front End Development and my passion is all about building elegant and professional user interfaces and websites.
 
-      I live in the Philippines. I am a graduate of Information Technology from Don Honorio Ventura State University. I started drawing and designing from a young age and most of my design skills and knowledge are self-taught. I got into programming when I was introduced to web programming during high school. It fascinated me and it hooked me on, so I decided to pursue this career. Even though I took the path of becoming a programmer, my strong and innate talent in arts and design persisted. Consequently, I taught myself about multimedia design. Combining the state of the art and my programming knowledge, I am able to build a professional and interactive websites.
+      I live in India. I started my web development journey from a young age and most of my development skills and knowledge are self-taught. I got into programming when I was introduced to computer programming course from Khan Academy . It fascinated me and it hooked me on, so I decided to pursue this career. Consequently, I taught myself about multimedia design. Combining the state of the art and my programming knowledge, I am able to build a professional and interactive websites.
 
       I will not stick around on just doing Front End development projects. My goal is to take it to the next level of becoming a Full Stack Developer and become one of the world's top designers, so now, I am working towards it. I have prepared myself to accept the challenges into this ever changing world and I will try my very best to achieve my dreams and goals.
       `,
